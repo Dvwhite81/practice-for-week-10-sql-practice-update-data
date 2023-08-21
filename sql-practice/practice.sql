@@ -35,3 +35,14 @@ SET last_name = 'Smith'
 WHERE first_name = 'Rose'
 AND last_name = 'Tyler';
 */
+
+/* Bonus */
+/* Trigger an UPDATE error */
+UPDATE friends
+SET last_name = NULL
+WHERE id = 5;
+
+/* Prevent error while removing last name */
+UPDATE friends
+SET last_name = ''
+WHERE id = 5;
